@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_460" data-name="Rectangle 460" width="30" height="30" transform="translate(964 230)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(-964 -230)" clip-path="url(#clip-path)">
+    <g id="cart-outline_1_" data-name="cart-outline (1)" transform="translate(961.769 227.152)">
+      <circle id="Ellipse_118" data-name="Ellipse 118" cx="1.115" cy="1.115" r="1.115" transform="translate(11.155 27.887)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.231"/>
+      <circle id="Ellipse_119" data-name="Ellipse 119" cx="1.115" cy="1.115" r="1.115" transform="translate(26.772 27.887)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.231"/>
+      <path id="Path_1239" data-name="Path 1239" d="M3.346,5.577H7.808l3.346,18.963H29" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.231"/>
+      <path id="Path_1240" data-name="Path 1240" d="M11.155,20.079h17.39a.558.558,0,0,0,.547-.448L31.1,9.591a.558.558,0,0,0-.547-.667H8.924" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.231"/>
+    </g>
+  </g>
+</svg>

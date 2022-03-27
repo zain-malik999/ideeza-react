@@ -1,0 +1,19 @@
+export const GET_SERVICE_PROVIDER_MACHINE =
+  "GET SERVICE PROVIDER MACHINE [IDEEZA][TECHNICIAN][MANAGEMENT][SERVICE][PROVIDER][MACHINES]";
+export const GET_SERVICE_PROVIDER_MACHINE_SUCCESS =
+  "GET SERVICE PROVIDER MACHINE SUCCESS [IDEEZA][TECHNICIAN][MANAGEMENT][SERVICE][PROVIDER][MACHINES]";
+export const TOGGLE_LOADER =
+  "TOGGLE_LOADER [IDEEZA][TECHNICIAN][MANAGEMENT][SERVICE][PROVIDER][MACHINES]";
+
+export const onServiceProviderMachine = (payload) => {
+  return {
+    type: GET_SERVICE_PROVIDER_MACHINE,
+    payload,
+  };
+};
+export const onServiceProviderMachineSuccess = (payload) => {
+  return {
+    type: GET_SERVICE_PROVIDER_MACHINE_SUCCESS,
+    payload,
+  };
+};

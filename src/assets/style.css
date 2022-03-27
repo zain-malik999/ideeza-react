@@ -1,0 +1,499 @@
+::-webkit-scrollbar-thumb {
+  background-color: #ff09d0;
+  border: 2px solid #ff09d0;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-track {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px#E6E6E6;
+}
+.Carousel-fullHeightHoverButton-8 {
+  display: none !important;
+}
+.bgLinear {
+  background-image: linear-gradient(to right, #fb22c6, #5e0c8e);
+}
+.bg-dashboard {
+  background: url("./images/user-dash-img.png");
+  min-height: 300px;
+}
+.header-bg {
+  background: url("./images/header-new-bg.png") no-repeat right top;
+  background-size: 75% 100%;
+}
+@media (max-width: 600px) {
+  .header-bg {
+    background-size: 60% 100%;
+  }
+}
+.pricingFooter-bg {
+  background-size: 100% 100%;
+}
+.Carousel-buttonWrapper-9 {
+  display: none !important;
+}
+.MuiButton-root {
+  outline: none !important;
+}
+.menu-item:hover img {
+  filter: brightness(1000%);
+}
+.menu-item:hover .menu-label {
+  color: white !important;
+}
+.bright {
+  filter: brightness(1000%);
+}
+.PrivateSwitchBase-root-1 {
+  padding: 4px !important;
+}
+.NotesDetail .hover-text {
+  transition: all 0.5s !important;
+}
+.NotesDetail:hover .hover-text {
+  color: white !important;
+  transition: all 0.5s;
+}
+.transform-none {
+  text-transform: none !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.news-tabs:hover {
+  color: #5e0c8e m !important;
+}
+
+@media (min-width: 600px) {
+  .MuiTab-root {
+    min-width: 50px !important;
+  }
+}
+
+.sms-input:hover {
+  border: 1px solid #fb22c6 !important;
+}
+.sms-input:active {
+  border: 1px solid #fb22c6 !important;
+}
+.sms-input:focus {
+  border: 1px solid #fb22c6 !important;
+}
+.bg-pricing {
+  z-index: 1000;
+  background: url("./landing/footer-bottom-pricing.png") no-repeat bottom;
+  background-size: 100% 75%;
+}
+
+tr:nth-child(odd) {
+  background: #fafafa;
+}
+tr:hover {
+  background: #fafafa;
+}
+
+.check {
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+}
+.checkbox:checked + .check {
+  background-color: #f301c3;
+  border-color: transparent;
+}
+.icon-bar {
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 75%;
+}
+#customLoadingScreenDiv {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.MuiSelect-outlined {
+  border: 1px !important;
+}
+.add-success {
+  height: 600px;
+}
+#engine:fullscreen {
+  width: 100%;
+  height: 100% !important;
+  /* etc.. */
+}
+
+.myIDeeza {
+  left: 92%;
+}
+
+.MuiOutlinedInput-adornedEnd {
+  padding-right: 0px !important;
+}
+.MuiOutlinedInput-adornedStart {
+  padding-left: 0px !important;
+}
+
+.bg-left {
+  background: url("./images/Intersection.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.bg-right {
+  background: url("./images/Intersection2.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.shadow-current {
+  box-shadow: 0px 16px 58px -21px rgba(255, 0, 199, 0.68) !important;
+}
+
+/* .makeStyles-drawer-1 {
+  display: none !important;
+} */
+
+.MuiList-padding {
+  outline: none !important;
+}
+
+.mainContainer {
+  min-height: calc(100vh - 80px);
+  padding-top: 80px !important;
+}
+
+.bg-landing {
+  background: url("./landing/newhomeBanner_bg2.png") no-repeat right top;
+  background-size: 78% auto;
+}
+@media (max-width: 449px) {
+  .video-screen {
+    background: url("./landing/screen-img.png") no-repeat center center;
+    width: 254px !important;
+    height: 253px !important;
+    background-size: 100% 100%;
+    padding: 80px 98px 63px 102px;
+    max-width: 100%;
+  }
+}
+.connect-dev {
+  background: url("./landing/chip-bg.png") no-repeat center center;
+  background-size: 100%;
+}
+
+.video-screen {
+  background: url("./landing/screen-img.png") no-repeat center center;
+  width: 824px;
+  height: 493px;
+  background-size: 100% 100%;
+  padding: 80px 98px 63px 102px;
+  max-width: 100%;
+}
+.idea-sec-bg-img {
+  background: url("./landing/ref_bg_1232.png") no-repeat center center;
+}
+.clip {
+  background-size: 100%;
+}
+.max-height img {
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+}
+.el-checkbox__inner {
+  width: 16px;
+  height: 16px;
+}
+
+footer {
+  clip-path: ellipse(100% 85% at 37% 100%);
+  background: linear-gradient(
+      to bottom,
+      rgba(86, 31, 128, 0.6) 30%,
+      rgba(243, 1, 195, 0.6) 100%
+    ),
+    url("./images/footer.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-collaboration {
+  background: url("./landing/newhomeBanner_bg.png") no-repeat right top;
+  background-size: 78% auto;
+}
+.bg-success {
+  background: url("./landing/success_story_bg.png") no-repeat right top;
+  background-size: cover;
+}
+.btn-gradient {
+  background: rgb(255, 154, 233);
+  background: linear-gradient(
+    86deg,
+    rgba(255, 154, 233, 1) 0%,
+    rgba(255, 2, 206, 1) 100%
+  );
+}
+.stories_card {
+  opacity: 0.5;
+  transition: all 0.5s;
+  padding: 50px 60px;
+}
+.stories_card:hover {
+  padding: 10px 20px !important;
+  transition: all 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.bg-freelancer {
+  background: url("./landing/freelancer_landing.png") no-repeat right top;
+  background-size: 73%;
+  height: 90vh;
+}
+@media (max-width: 1100px) {
+  .bg-freelancer {
+    height: 45vh;
+  }
+}
+@media (min-width: 430px) {
+  .bg-header {
+    background: url("./landing/header-new-bg.png") no-repeat right top;
+    background-size: 80% 100%;
+  }
+}
+@media (max-width: 429px) {
+  .bg-header {
+    background: url("./landing/header-new-bg.png") no-repeat right top;
+    background-size: 60% 100%;
+  }
+  .bg-freelancer {
+    height: 55vh;
+  }
+}
+
+.bg-sp-landing {
+  background: url("./landing/img_ref_2334.png") no-repeat;
+  background-position: 50% 50%;
+}
+.connect-dev {
+  background: url("./landing/bg-pattern.png") no-repeat center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skill-bg-img {
+  background: url("./landing/bg_ref_2337.png") no-repeat top;
+  background-position: 100% 100%;
+}
+.vid-sec {
+  background-image: url("./landing/mac.png") !important;
+  background-position: center bottom;
+  background-size: contain;
+  height: 500px;
+  width: 800px;
+  background-repeat: no-repeat;
+}
+@media (min-width: 770px) {
+  .vid-sec iframe {
+    width: 500px;
+    height: 325px;
+    left: 150px;
+    top: 10px;
+  }
+}
+@media (max-width: 769px) {
+  .vid-sec {
+    width: 500px;
+    height: 400px;
+  }
+  .vid-sec iframe {
+    width: 370px;
+    height: 245px;
+    left: 65px;
+    top: 40px;
+  }
+  .MuiTableContainer-root {
+    width: 100%;
+    overflow-x: auto;
+    max-width: 728px !important;
+  }
+}
+@media (max-width: 414px) {
+  .vid-sec {
+    width: 300px;
+    height: 300px;
+  }
+  .vid-sec iframe {
+    width: 220px;
+    height: 130px;
+    left: 40px;
+    top: 90px;
+  }
+  .MuiDialog-paper {
+    margin: 0px !important;
+  }
+  .MuiDialog-paperFullWidth {
+    width: calc(100% - 34px) !important;
+  }
+  .MuiTableContainer-root {
+    width: 100%;
+    overflow-x: auto;
+    max-width: 342px !important;
+  }
+}
+.leading-tight {
+  line-height: 1.25rem !important;
+}
+.leading-loose {
+  line-height: 2rem !important;
+}
+.leading-3 {
+  line-height: 0.75rem !important;
+}
+.leading-4 {
+  line-height: 1rem !important;
+}
+.leading-5 {
+  line-height: 1.25rem !important;
+}
+.leading-6 {
+  line-height: 1.5rem !important;
+}
+.leading-7 {
+  line-height: 1.75rem !important;
+}
+.leading-8 {
+  line-height: 2rem !important;
+}
+.leading-9 {
+  line-height: 2.25rem !important;
+}
+.leading-10 {
+  line-height: 2.5rem !important;
+}
+.leading-11 {
+  line-height: 3rem !important;
+}
+.leading-12 {
+  line-height: 3.5rem !important;
+}
+
+.invester-card {
+  min-width: 300px;
+}
+
+.bg-about {
+  background: url("./landing/freelancer_landing.png") no-repeat right top;
+  background-size: 73%;
+}
+.bg-company {
+  background: url("./landing/left-gears.png") no-repeat left bottom,
+    url(./landing/right-gears.png) no-repeat right bottom;
+  background-size: 250px;
+}
+.bg-team {
+  background: url(./landing/left-gears.png) no-repeat left bottom,
+    url(./landing/right-gears.png) no-repeat right bottom;
+  background-size: 250px;
+}
+.bg-career {
+  background: url(./landing/picasso-left-art.png) no-repeat left bottom,
+    url(./landing/picasso-right-art.png) no-repeat right bottom;
+  background-size: 130px;
+}
+.dot {
+  top: 70%;
+}
+.agrement_tabs .MuiTabs-flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+.PrivateTabIndicator-colorSecondary-3 {
+  background-color: transparent !important;
+}
+.PrivateTabIndicator-root-1,
+.PrivateTabIndicator-root-2,
+.PrivateTabIndicator-root-3 {
+  background-color: transparent !important;
+}
+.agrement_tabs .MuiTab-textColorInherit.Mui-selected:focus .activeTab {
+  color: #f301c3 !important;
+}
+.MuiTabs-indicator {
+  display: none !important;
+}
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+  border: 1px solid white;
+  border-radius: 3px !important;
+}
+.MuiAccordionSummary-root {
+  border-radius: 3px !important;
+  max-height: 50px !important;
+  border: 1px solid #dcdcdc !important;
+  padding-left: 25px !important;
+}
+.MuiAccordionSummary-root.Mui-expanded {
+  min-height: 50px !important;
+}
+.MuiAccordion-rounded:first-child {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+.MuiAccordion-rounded:last-child {
+  border-bottom-left-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+.MuiIconButton-edgeEnd {
+  margin-right: 0px !important;
+}
+.MuiAccordion-root:before {
+  top: 0px !important;
+  height: 0px !important;
+  content: "";
+  opacity: 0 !important;
+}
+
+.MuiAccordionSummary-expandIcon {
+  transform: rotate(0deg) !important;
+}
+.bg-gradient {
+  background: linear-gradient(
+    150deg,
+    rgba(98, 18, 156, 1) 0%,
+    rgba(242, 3, 210, 1) 100%
+  );
+}
+
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 0px 0px rgb(0 0 0 / 0%), 0px 6px 13px 1px rgb(0 0 0 / 3%),
+    0px 3px 14px 2px rgb(0 0 0 / 1%) !important;
+}
+.MuiPickersDay-daySelected:hover {
+  outline: none !important;
+}
+.MuiTableCell-body {
+  color: #333333 !important;
+}
+.MuiPickersStaticWrapper-staticWrapperRoot {
+  align-items: center;
+}
+.code-height {
+  max-height: 680px;
+}
+.fill-height {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}

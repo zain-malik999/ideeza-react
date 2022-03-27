@@ -1,0 +1,596 @@
+<template>
+  <div class="home-content">
+    <div class="grid grid-cols-1">
+      <h2 class="legal-section-heading">IDEEZA Legal</h2>
+    </div>
+    <div class="w-auto legal-section-text">
+      <h3 class="font-semibold text-black-300 mb-12">Please read this Terms and Conditions of Use and all other Agreements and Polices that are referenced herein Carefully.</h3>
+      <span class="text-black-300">
+        <span v-if="!readMoreActivated" class="leading-loose text-ideeza-black" v-html="landingText.slice(0, 300)"></span>
+        <a class="text-ideeza underline font-bold" v-if="!readMoreActivated" @click="readMoreActivated=!readMoreActivated" href="#">
+          Show more
+        </a>
+        <span v-if="readMoreActivated" v-html="landingText"></span>
+        <a class="text-ideeza underline font-semibold" v-if="readMoreActivated" @click="readMoreActivated=!readMoreActivated" href="#">
+          Show less
+        </a>
+      </span>
+    </div>
+    <div class="grid grid-cols-6 mt-24">
+      <div class="col-span-2 mx-8 bg-ideeza-gray-400 rounded-md">
+        <ul class="text-xl py-6 px-24" style="line-height: 5rem;">
+          <li class="hover:text-ideeza cursor-pointer">
+            <PrivacypolicyIcon class="" />
+            <span>Privacy Policy</span>
+          </li>
+          <li class="hover:text-ideeza cursor-pointer">
+            <TermsIcon class="" />
+            <span>Terms & Conditions</span>
+          </li>
+          <li class="hover:text-ideeza cursor-pointer">
+            <ApiIcon class="" />
+            <span>API License Agreement</span>
+          </li>
+          <li class="hover:text-ideeza cursor-pointer">
+            <GuidelineIcon class="" />
+            <span>Community Guidelines</span>
+          </li>
+          <li class="hover:text-ideeza cursor-pointer">
+            <CopyrightIcon class="" />
+            <span>Copyright and DCMA Policy</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-span-4">
+        <div class="grid grid-cols-3 mb-8">
+          <div class="col-span-1">
+            <span class="text-ideeza text-3xl border-b-2 border-ideeza pb-4">Terms & Conditions</span>
+          </div>
+          <div class="col-span-1 col-start-3 col-end-4">
+            <div class="grid grid-cols-2">
+              <div class="">
+                <select class="text-lg bg-white leading-tight focus:outline-none focus:shadow-outline">
+                  <option value="">v.1.0.11</option>
+                  <option value="">v.1.1.22</option>
+                  <option value="">v.1.2.32</option>
+                  <option value="">v.1.3.44</option>
+                </select>
+              </div>
+              <div class="text-lg">
+                <span>Download PDF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mr-20">
+          <div class="accordian-wrap">
+            <div>
+              <div class="px-8 py-4 border border-gray-300 rounded justify-between flex cursor-pointer" @click="toggleAccordion(activeIndex == 0 ? 1 : activeIndex != 1 ? 1 : 0)">
+                <div class="text-lg text-ideeza font-bold">
+                  INTRODUCTION
+                </div>
+                <div>
+                  <font-awesome-icon class="mr-1 text-sm text-gray-900" :icon="['fas', 'plus']" v-if="activeIndex == 0" />
+                  <font-awesome-icon class="mr-1 text-sm text-gray-900" :icon="['fas', 'minus']" v-else />
+</div>
+</div>
+<div class="overflow-auto h-64 px-10 py-8 text-lg text-gray-900" :class="[activeIndex == 1 ? 'block':'hidden']">
+                    <ul>
+                      <li>
+                        <strong>1. AGREEMENT TO TERMS AND CONDITIONS OF USE</strong>
+                        <ul style="list-style: lower-roman;">
+                          <li>
+                        These Terms and Conditions of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“<strong>you</strong>” or “<strong>User</strong>”) and <strong>PCBiX Limited (Ltd)</strong> (“ the <strong>Company</strong>” , “                            <strong>we</strong>”, “                            <strong>us</strong>” or “<strong>our</strong>”), concerning your access to and use of the “<strong>IDEEZA</strong>” Platform, which comprises a website and mobile application, as well as any other media form, channel and/or website related, linked, or otherwise connected thereto ( the “<strong>Platform</strong>”), and any associated services (henceforth referred to as the “<strong>Services</strong>”), which include, but are not limited, to any communications we may have with the User).
+                          </li>
+                          <li>
+                        Children under the age of thirteen (13) are not allowed to create a User Account or otherwise use and/or access the Platform and/or Service(s). Additionally, if you are in the European Economic Area (EEA), you must be over the age required by the laws of your country to create an account or otherwise use the Platform and/or Services, or we need to have received verifiable consent from your parent or legal guardian to use and/or access this Platform and/or Service(s).
+                          </li>
+                          <li>
+                        You agree that by downloading, browsing, accessing and/or using the Platform, you have read, understood and agree to be bound by all of these Terms and Conditions of Use.
+                          </li>
+                          <li>
+                        If you do not agree with all of these Terms and Conditions of Use, you are expressly prohibited from using the Platform and you <strong>MUST DISCONTINUE</strong> use immediately.
+                          </li>
+                          <li>
+                        Please read these Terms and Conditions of Use carefully as they contain important information regarding your legal rights, remedies and obligations, choice of law and jurisdiction.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>2. AMENDMENT OF TERMS AND CONDITIONS</strong>
+                        <ul style="list-style: lower-roman;">
+                          <li>
+                        We reserve the right to modify, delete and/or replace these Terms and Conditions at any time, at our sole discretion.
+                          </li>
+                          <li>
+                        We shall alert you about any changes by updating the “<strong>Last Updated</strong>” date of these Terms and Conditions. It is your responsibility to periodically review these Terms and Conditions to stay informed of updates. You are required to accept these changes before continued usage of the Platform.
+                          </li>
+                          <li>
+                        By accepting these changes and/or continuing to access and/or use the Platform after the “last updated” date of these revisions, you agree to be bound by the revised Terms and Conditions. If you do not agree to the new Terms and Conditions, please stop using the Platform.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>3. LINKS TO THIRD PARTY WEBSITES</strong>
+                        <ul style="list-style: lower-roman;">
+                          <li>
+                        Our Platform may contain links to third party websites or services, including advertisements, that are not owned or controlled by the Company, the IDEEZA Platform and/or their affiliates.
+                          </li>
+                          <li>
+                        You agree that we can show you advertisements that businesses and organizations pay us to promote on and off the Platform. We use your personal data, such as information about your activity and interests, to show you ads that are more relevant to you.
+                          </li>
+                          <li>
+                        Our Platform may utilise third party services in the Platform to facilitate access to our Services, provide the Platform or Services on our behalf, perform Platform related services or to assist us in analysing how our Platform is used.
+                          </li>
+                          <li>
+                        We have no control over, and assume no responsibility for, the content, privacy policies, and/or practices of any third-party web sites, advertisements or services.
+                          </li>
+                          <li>
+                        You acknowledge and agree that we shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such third-party web sites or services.
+                          </li>
+                          <li>
+                        We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div class="mt-6 px-8 py-4 border border-gray-300 rounded justify-between flex cursor-pointer" @click="toggleAccordion(activeIndex == 0 ? 2 : activeIndex != 2 ? 2 : 0)">
+                    <div class="text-lg text-ideeza font-bold">
+                  USER ACCOUNTS
+                    </div>
+                    <div>
+                      <font-awesome-icon class="mr-1 text-sm text-gray-900" :icon="['fas', 'plus']" v-if="activeIndex == 0" />
+                      <font-awesome-icon class="mr-1 text-sm text-gray-900" :icon="['fas', 'minus']" v-else />
+</div>
+</div>
+<div class="overflow-auto h-64 px-10 py-8 text-lg text-gray-900" :class="[activeIndex == 2 ? 'block':'hidden']">
+                        <ul>
+                          <li>
+                            <strong>1. USER REGISTRATION</strong>
+                            <ul style="list-style: lower-roman;">
+                              <li>
+                        You may be required to register with this Platform and sign into the Platform so as to access and use the services provided therein.
+                              </li>
+                              <li>
+                        You may register and/or sign into the Platform via third-party (3rd) Platform login services (such as Facebook and Google).
+                              </li>
+                              <li>
+                        Upon registration with and signing into the Platform, we may collect, process and/or store your personal data, including but not limited to your first and last names, email address, date of birth and GPS location data. Our Privacy Policy which highlights how we treat your personal data can be found
+                              </li>
+                              <li>
+                        You agree to keep your password confidential and shall be responsible for all use of your account and password.
+                              </li>
+                              <li>
+                        We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable.
+                              </li>
+                              <li>
+                        We reserve the right to decline your registration to join our Platform and/or decline the addition of any Account type highlighted under Clause 3 below (“<strong>User Account Types</strong>”), for any lawful reason, in our sole discretion, including any business considerations.
+                              </li>
+                              <li>
+                        We reserve the right, to delete, terminate, deactivate, suspend and/or restrict access to your account at our sole discretion, for any reason, and without giving you a further explanation for such deletion, termination, deactivation, suspension and/or restriction.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <strong>2. USER REPRESENTATIONS</strong>
+                            <ul style="list-style: lower-roman;">
+                              <li>
+                        By using and/or accessing the Platform and/or Services, you represent and warrant that:
+                                <ul style="list-style: lower-alpha;">
+                                  <li>
+                            all registration information you submit shall be true, accurate, current, and complete;
+                                  </li>
+                                  <li>
+                            you shall maintain the accuracy of such information and promptly update such registration information as necessary;
+                                  </li>
+                                  <li>
+                            you have legal capacity to enter into a binding Agreement and you agree to comply with these Terms of Use;
+                                  </li>
+                                  <li>
+                            if you are accepting these Terms on behalf of another legal entity, including a business or a government, you represent that you have full legal authority to bind such entity to these terms;
+                                  </li>
+                                  <li>
+                            you shall not access the Platform and/or Services through automated or non-human means, whether through a bot, script or otherwise;
+                                  </li>
+                                  <li>
+                            you shall not use, copy, modify, sell, distribute, publicly display, transmit, revise, reverse engineer, upload, republish, post or create derivative works (where applicable) of the trade-marks, trade names, service marks, logos, information, software or other material or content or any part of the Platform and/or Services without our express written permission;
+                                  </li>
+                                  <li>
+                            you shall not use and/or access the Platform and/or Services to build a similar and/or competing Platform and/or Services;
+                                  </li>
+                                  <li>
+                            you shall not use the Platform and/or Services for any illegal or unauthorized purpose;
+                                  </li>
+                                  <li>
+                            you shall not use your User Account, the Platform and/or Services to design, create and/or modify a product for another 3rd party unless your User Account is designated to do so;
+                                  </li>
+                                  <li>
+                            you shall not use the Platform and/or Services for any crime or to propagate any criminal activity including any financial crime(s), money laundering and/or terrorist financing as defined by the statutes and laws of the State of Israel and the United States of America (USA).
+                                  </li>
+                                  <li>
+                            your use of the Platform and/or Services shall not violate any applicable law or regulation. The Company, Platform and/or their affiliates shall not bear any legal liability or responsibility for any unlawful, unauthorised or illegal use of the Platform and/or Services;
+                                  </li>
+                                  <li>
+                            we have not previously disabled and/or terminated your User Account for any reason;
+                                  </li>
+                                  <li>
+                            you shall otherwise comply with the terms of this Agreement;
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                        We shall alert you about any changes by updating the “<strong>Last Updated</strong>” date of these Terms and Conditions. It is your responsibility to periodically review these Terms and Conditions to stay informed of updates. You are required to accept these changes before continued usage of the Platform.
+                              </li>
+                              <li>
+                        By accepting these changes and/or continuing to access and/or use the Platform after the “last updated” date of these revisions, you agree to be bound by the revised Terms and Conditions. If you do not agree to the new Terms and Conditions, please stop using the Platform.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <strong>3. USER ACCOUNT TYPES</strong>
+                            <span>We offer the following account types to our Users:</span>
+                            <ul style="list-style: lower-roman;">
+                              <li>
+                                <strong>Innovator Account</strong>
+                                <ul style="list-style: lower-alpha;">
+                                  <li>
+                            You can register or add an account to use the Platform as an Innovator (“Innovator Account”.)
+                                  </li>
+                                  <li>
+                            The Innovator Account allows you to:
+                                    <ul style="list-style: upper-roman;">
+                                      <li>
+                                use and/or access our Services to automatically create, model, develop, design, and/or render your product (“<strong>User Designs</strong>”)
+                                      </li>
+                                      <li>
+                                receive production ready blueprints of the User Designs
+                                      </li>
+                                      <li>
+                                share your production blueprints with our manufacturing partners and order your product from them
+                                      </li>
+                                      <li>
+                                create Design Projects (Public and/or Private Projects);
+                                      </li>
+                                      <li>
+                                sell your User Designs
+                                      </li>
+                                      <li>
+                                create new components for our Database
+                                      </li>
+                                      <li>
+                                open a Collaborative Development group
+                                      </li>
+                                      <li>
+                                contribute to other Users’ projects
+                                      </li>
+                                      <li>
+                                access and/or use other IDEEZA Platform and third-party services designed to aid your research, development (R&D) and production process, including but not limited to:
+                                        <ul style="list-style: disc">
+                                          <li>
+                                    Intellectual Property Registration on the IDEEZA Intellectual Property (IP) Ledger;
+                                          </li>
+                                          <li>
+                                    Qualified Attorney Services
+                                          </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                            Any User using the Platform and/or Services for the purposes listed in Clause 3(i)(b) above is an Innovator for the purposes of the Platform, Services and these Terms and Conditions of Use.
+                                  </li>
+                                  <li>
+                            You can only register and/or link one (1) Innovator Account to your identity and/or User Credentials/Account.
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <strong>Service Provider Account</strong>
+                                <ul style="list-style: lower-alpha;">
+                                  <li>
+                            You can register or add an account to use the Platform as a Service Provider (“<strong>Service Provider Account</strong>”.)
+                                  </li>
+                                  <li>
+                            The categories of Service Provider accounts includes, but is not limited to:
+                                    <ul style="list-style: upper-roman;">
+                                      <li>
+                                Manufacturer Account
+                                      </li>
+                                      <li>
+                                Attorney Account
+                                      </li>
+                                      <li>
+                                Cloud Computing Service(s) Account
+                                      </li>
+                                      <li>
+                                Marketing Service(s) Account
+                                      </li>
+                                      <li>
+                                Distributor Account
+                                      </li>
+                                      <li>
+                                Engineering Account
+                                      </li>
+                                      <li>
+                                Algorithmic Account
+                                      </li>
+                                      <li>
+                                Designer Account
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                            This Service Provider Account allows you to
+                                    <ul style="list-style: upper-roman;">
+                                      <li>
+                                provide services to our Users based on the category of service provider accounts that you belong to
+                                      </li>
+                                      <li>
+                                receive payment from our Users for these services offered
+                                      </li>
+                                      <li>
+                                create new and/or modify data for our Database
+                                      </li>
+                                      <li>
+                                access and/or use other IDEEZA Platform and third-party services designed to aid the delivery of your services, including but not limited to
+                                        <ul style="list-style: disc;">
+                                          <li>
+                                    Intellectual Property Registration on the IDEEZA IP Ledger
+                                          </li>
+                                          <li>
+                                    Qualified Attorney Services
+                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                advertise and/or promote your services on our Platform for a fee
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                            Any User using the Platform and/or Services for the purposes listed in Clause 3(ii)(b)(c) above is a Service Provider for the purposes of the Platform, Services and these Terms and Conditions of Use.
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                        You are responsible for keeping your contact information on your User Account up-to date in order to receive any notices or alerts that we may send you from time to time, including notices and/or alerts of suspected or actual security breINTRODUCTIONaches to your User Account.
+                              </li>
+                              <li>
+                        You may, with our express written consent, appoint third-party person(s) and or entity to access your User Account, including your IDEEZA Payment Wallet(s) (“Authorised Third-Party”). Kindly note that this access shall grant this third-party access to your User Account, including, but not limited to, Log-In Credentials, Messages and IDEEZA Payment Wallets
+                              </li>
+                              <li>
+                        Notwithstanding Clause 3(iv) of this Agreement, you shall be liable for any action taken by these third parties on or relating to your User Account. The Company, Platform and/or their affiliates shall not bear any legal liability or responsibility for any action undertaken on your account or the Platform by your Authorised Third Party.
+                              </li>
+                              <li>
+                        Notwithstanding Clauses 3(iv)(v) of this Agreement, we reserve the right to, at our sole discretion, refuse access to the Platform and/or Service to your Authorised Third Party, subject to applicable law.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <strong>4. USER PROFILE</strong>
+                            <ul style="list-style: lower-roman;">
+                              <li>
+                        You must complete a Profile detailing information, including but not limited to, your Name, Location, Skills, Social Media Account(s) and Industry, in order to use your User Account on the Platform.
+                              </li>
+                              <li>
+                        Your User Profile may also include information such as:
+                                <ul style="lower-style: lower-alpha;">
+                                  <li>
+                            your Public Projects;
+                                  </li>
+                                  <li>
+                            reviews of your work and/or services made by other users of the Platform; and/or
+                                  </li>
+                                  <li>
+                            testimonials regarding your work, services you may provide, profile and/or the Platform.
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                        You consent to the display of your User Profile to other users on the Platform and the public. You can however change your privacy settings to prevent the public display of your User Profile.
+                              </li>
+                              <li>
+                        You consent to the sharing, to the public, without your prior consent, both on the Platform and/or other websites, of your:
+                                <ul style="list-style: lower-alpha;">
+                                  <li>
+                            Public Projects; and/or
+                                  </li>
+                                  <li>
+                            Testimonials regarding the Platform and/or services.
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                        You agree to provide accurate, up-to-date and complete information on your User Profile.
+                              </li>
+                              <li>
+                        You agree not to provide any false and/or misleading information on your User Profile concerning your identity, location, skills and contact information. In the event that any such information is false and/or misleading, you shall take immediate measures to correct this false and/or misleading information.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <strong>5. IDENTITY VERIFICATION</strong>
+                            <ul style="list-style: lower-roman;">
+                              <li>
+                        We use multi-level systems to verify your identity so as to protect the Platform, Services and Users from fraudulent users as well as to keep appropriate customer records on our Users.
+                              </li>
+                              <li>
+                        We may require you, before completing registration on the platform or anytime thereafter, to verify your identity.
+                              </li>
+                              <li>
+                        You authorise us to make any inquiries necessary to validate your identity and confirm your ownership of your email address or financial accounts, subject to applicable law.
+                              </li>
+                              <li>
+                        Identity verification may be undertaken through submission of government issued identity documents and/or participation in a video call to ascertain the veracity of the identity portrayed in these government identification documents, through the verification of the user’s email address and photograph alongside their government issued identification documents, through third party identity verification services and/or through any other method that we may, at our sole discretion, use to verify your identity.
+                              </li>
+                              <li>
+                        Notwithstanding the provisions of Clause 5(iv) above, the Company, Platform and/or their affiliates cannot accept responsibility for any use of your Personal Information by such third party identity verification services, and we cannot guarantee that they will adhere to the same privacy and security practices as us. We shall bear no legal liability for any illegal disclosure of personal data or contravention of any data protection/privacy legislation by these third-party identity verification services with regard to your personal information.
+                              </li>
+                              <li>
+                        We may use this information to verify your identity, age, enforce our Terms and Conditions of Service and in prevention of fraud. Kindly note that we may record such video calls and/or take screenshots of our users during the identity verification video call.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <strong>6. ACCOUNT SECURITY </strong>
+                            <ul style="list-style: lower-roman;">
+                              <li>
+                                <strong>Password Security</strong>
+                                <ul style="list-style: lower-alpha;">
+                                  <li>
+                            In order to access our Platform and/or Services, you will be required to create a username and password for your User Account.
+                                  </li>
+                                  <li>
+                            You are entirely and solely responsible for safeguarding the confidentiality and security of your username and password (“<strong>Log-In Credentials</strong>”), including that of any other security measures (“<strong>Security Credentials</strong>”) that you use to Access the Platform and/or Service; for example any 2-Factor (2FA) Authentication services that may be linked to our platform.
+                                  </li>
+                                  <li>
+                            You are entirely and solely responsible for safeguarding the security of and maintaining control of the electronic device through which you access the Platform and/or Services.
+                                  </li>
+                                  <li>
+                            You agree that we shall assume that any third-party entity and/or person using your User Account is either you or is authorised to act on your behalf.
+                                  </li>
+                                  <li>
+                            Any loss or compromise through attacks of your electronic device, your Log-in Credentials and/or your Security Credentials, including, but not limited to, viruses, malware, phishing and spoofing, may result in unauthorized access to your User Account by third-parties and the loss or theft of any Fiat and/or Digital Currency funds held in your Escrow Account and/or Digital Currency Wallet (“<strong>IDEEZA Payment Wallets</strong>”), and any associated accounts, including your linked bank account(s) and credit card(s).
+                                  </li>
+                                  <li>
+                            The Company, Platform and their affiliates assume no legal liability or responsibility for any loss that you may sustain due to compromise of your account Login Credentials, Security Credentials, IDEEZA Payment Wallets and/or your electronic device due to no fault of the Company, Platform and their affiliates and/or failure to follow the requirements set out in Clause 6 (“<strong>Account Security</strong>), or follow or act on any notices or alerts that we may send to you.
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <strong>Security Breach</strong>
+                                <ul style="list-style: lower-alpha;">
+                                  <li>
+                            If you suspect that your User Account, IDEEZA Payment Wallets and/or any of your Log-in and/or Security Credentials have been compromised in any way or if you become aware of any fraud, attempted fraud and/or any other security incident, including, but not limited to, a cyber-security attack and/or phishing, affecting you, your User Account and/or the Platform (“<strong>Security Breach</strong>”), you must immediately:
+                                    <ul style="list-style: disc;">
+                                      <li>
+                                Notify <strong class="text-blue-300">IDEEZA Support</strong> by email: support@ideeza.com or call us on +972-505-905-910 (international phone charges may apply);
+                                      </li>
+                                      <li>
+                                Provide us with continuous updates throughout the duration of the Security Breach;
+                                      </li>
+                                      <li>
+                                Take any steps that we reasonably require to remedy, reduce, manage and/or report the Security Breach;
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                            Failure to adhere to the provisions of Clause 6(ii) of this Agreement (“<strong>Security Breach</strong>”) may inform our determination of the appropriate resolution of the Security Breach.
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <strong>
+                      7. THIRD PARTY ACCESS
+                            </strong>
+                            <ul style="list-style: lower-roman;">
+                              <li>
+                        Subject to the provisions of Clauses 3(iv)(v)(vi) (“<strong>User Account Types</strong>”) of this Agreement if, to the extent permitted by Clauses 3(iv)(v)(vi) (“<strong>User Account Types</strong>”), or as otherwise permitted by us from time to time, you grant third party access to your User Account, you acknowledge that granting permission to a third party to take specific actions on your behalf does not relieve you of any of your responsibilities under this Agreement.
+                              </li>
+                              <li>
+                        You are fully responsible for all acts or omissions of any third party with access to your User Account and any action of such third party shall be considered to be an action authorized by you.
+                              </li>
+                              <li>
+                        Further, you acknowledge and agree that you will not hold the Company, Platform and/or affiliates responsible for, and will indemnify the Company, Platform and/or their Affiliates from, any liability arising out of or related to any act or omission of any third party with access to your User Account.
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+        <script>
+import PrivacypolicyIcon from '~/components/partials/icons/privacypolicy-icon.vue';
+import ApiIcon from '~/components/partials/icons/api-icon.vue';
+import TermsIcon from '~/components/partials/icons/terms-icon.vue';
+import CopyrightIcon from '~/components/partials/icons/copyright-icon.vue';
+import GuidelineIcon from '~/components/partials/icons/guideline-icon.vue';
+export default {
+  components: {
+    PrivacypolicyIcon,
+    ApiIcon,
+    TermsIcon,
+    CopyrightIcon,
+    GuidelineIcon
+  },
+  data() {   
+    return {
+      activeIndex: 0,
+      readMoreActivated: false,
+      landingText: "These Agreements and Policies contain important information regarding your legal rights, remedies and obligations that govern your use of the IDEEZA Platform. <br> Kindly note that the IDEEZA Platform includes our website, mobile application, social media pages and any other associated services. <br>These include the: <br>
+          <ul>
+            <li>1. Terms of Service</li>
+            <li>2. Privacy Policy</li>
+            <li>3. API License Agreement</li>
+            <li>4. Community Guidelines & Content Policy</li>
+            <li>5. Copyright and DCMA Policy</li>
+          </ul>
+          <br>We may, at our sole discretion Terms and Conditions of Use and any other Agreement(s) or Policies at any time by posting a revised version on the Site. We shall provide reasonable advance notice of any substantial revision to these Agreements and/or policies by providing notice on the Site, and/or by sending you notice of such changes by email.  Any revisions to the Terms and Conditions of Use and any other Agreement(s) or Policies will take effect on the noted effective date (each, as applicable, the “Effective Date”).<br>You acknowledge and agree that by continuing to use the Platform, Application, Website or Services after the effective date of the changes, you agree to be bound by the Terms and Conditions of Use or any such Agreement(s) and/or Policies.<br>If you do not accept the Terms and Conditions of Use and/or any other Agreement(s) or Policies in their entirety, you agree not to access or use the Platform, Application, Site and/or Services after the effective date of the changes.",
+    }
+  },
+  mounted() {},
+  methods: {
+    toggleAccordion(index) {
+      this.activeIndex = index;
+    }
+  }
+}
+
+            </script>
+            <style>
+.home-content {
+  overflow-y: auto;
+}
+.legal-section-heading {
+@apply text-ideeza text-2xl font-semibold text-center mt-10 mb-6;
+}
+.legal-section-text  {
+@apply bg-ideeza-gray-400 mx-8 px-56 pt-10 pb-16 text-left rounded-md;
+}
+
+.faq-wrapper {
+  max-width: 100% !important;
+}
+
+.accordion {
+  border: none !important;
+}
+
+.accordion__item {
+  margin-bottom: 20px !important;
+  border-bottom: none !important;
+}
+
+.accordion__title {
+  border: 1px solid #DDDDDD;
+}
+
+.accordion__title-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.accordion__title_active {
+  color: #fc00c5 !important;
+}
+
+.accordion__title:hover {
+  color: #fc00c5 !important;
+}
+
+.accordion__value {
+  font-size: 17px !important;
+  padding: 25px !important;
+}
+
+            </style>
